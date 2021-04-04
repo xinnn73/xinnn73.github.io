@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>家庭作業04(B2A38李欣瑋)</title>
+	<style>
+		h4 {
+			color:red;
+		}
+		p {
+			margin: 5px;
+		}
+		div{
+			color: blue;
+		}
+		table {
+			border-color: black;
+		}
+		tr {
+			text-align: left;
+		}
+		td {
+			vertical-align: middle;
+		}
+	</style>
+</head>
+	<body>
+	<script>
+		document.write ("<p><h4>九九乘法表</h4></p>");
+		document.write ('<table border="1" width="90%" cellspacing="0" cellpadding="0">')
+		function coun (b) {
+			for (j = 1; j<= b; j++) {
+				document.write("<tr>")
+				for (i =1; i <= b; i++) {
+				document.write ("<td><div>" +i + "x" + j + "=" + i*j + " " +"</div></td>");
+				}
+			document.write ("</tr>");
+			}
+			document.write("</table>")
+		}
+		coun(9);
+	</script>
+	</body>
+</html>
